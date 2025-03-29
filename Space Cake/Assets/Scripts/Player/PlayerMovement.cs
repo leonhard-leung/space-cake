@@ -12,6 +12,9 @@ namespace Player
         [SerializeField] private float lateralForce;    // sideways movement force
         [SerializeField] private float maxSpeed;        // max speed limit
         [SerializeField] private float dampingFactor;   // custom damping effect
+
+        [Header("Background Boundary")] [SerializeField]
+        private SpriteRenderer background;
         
         // Input System
         private PlayerInputActions _playerControls;
